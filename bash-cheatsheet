@@ -1,0 +1,153 @@
+# print your userid 
+#Syntax: whoami
+
+whoami
+
+# print working directory
+# Syntax: pwd [option(s)]
+
+pwd
+
+# list directory content 
+# Syntax: ls [option(s)] [file(s)]
+
+ls
+
+    common options:
+    -a -> show all files. do not ignore entries starting with .
+    -l -> use a long listing format. vad permisuni 
+
+
+# change directory. 
+# Syntax: cd [option(s)] directory
+
+cd
+
+
+# print text to the terminal window. 
+# Syntax: echo [option(s)] [string(s)]
+
+echo message
+
+    common options:
+    -e -> enable interpretation of backslash escapes
+    
+# creates a file. 
+# Syntax: touch [option(s)] file_name(s) 
+
+touch
+
+    common options:
+    -a  -> change only the access time
+    -m  -> change only the modification time
+    --version -> output version information and exit
+    -r, --reference=FILE -> use this file times instead of current time
+    -d, --date=STRING -> parse STRING and use it instead of current time
+
+# create a directory. 
+# Syntax: mkdir [option(s)] directory_name(s)
+
+mkdir 
+
+    common options:
+    -m, --mode=MODE -> set file mod (as in chmod) 
+    -p, --parents -> no error if existing make parent directories as needed.  
+    -v. --verbose -> print a meesage for each created directory
+
+# SEARCH. 
+# Syntax: grep [option(s)] pattern [file(s)]
+
+grep 
+
+    common options:
+    -i, --ignore-case ->  Ignore case distinctions in patterns and input data, so that  characters
+              that differ only in case match each other.
+
+    -c, --count ->  Ignore case distinctions in patterns and input data, so that  characters
+              that differ only in case match each other.
+
+    -n, --line-number ->  Ignore case distinctions in patterns and input data, so that  characters
+              that differ only in case match each other.
+
+# print manual or get help for a command. 
+# Syntax: man [option(s)] keyword(s)
+
+man
+
+    common options:
+    -w, --where, --path, --location -> dont actually display the manual page, but do prit the location of the source nroff file that would be formatted.
+    -f, --whatis -> equivalent to whatis. Display a short description from the manuak page, if available.
+    
+# move or rename directory. 
+# Syntax: mv [option(s)] argument(s)
+
+mv
+
+    common options:
+    -i, -interactive -> prompt before overwrite
+    -b -> like --backup but does not accept an argument
+    --backup[=CONTROL] -> make a backup of each existing destination file
+
+# remove directory  !Pt fisiere rm simplu! 
+# Syntax: rmdir [option(s)] directory_names
+
+rmdir
+    common options:
+    -p, --parents -> remove Directory and its ancestors
+    -v, --verbose -> output a diagnostic for every directory procesed
+
+# locate a speific file or directory
+    #daca nu exista comanda: sudo apt install mlocate
+
+locate
+    common options:
+    -q, --quiet -> write no meesages about errors encountered while reading and processing databases
+    -n, -l, --limit LIMIT -> EXIT SUCCESSFULLY AFTER FINDING 'LIMIT' entries
+    -i, --ignore-spaces -> ignore punctuation and spaces when matching patterns.
+
+# view the contents of a file - allows you to view files without opening an editor
+# Syntax: less file_name
+
+less
+    common options:
+    -e or --quit-at-eof -> causes less to automatically exit the second time it reaches end-of-file.
+    -f, --force -> forces non-regular files to be opened
+    -n, --line-numbers -> suppresses line numbers. * less simplu can run slowly, especially with very large input files.
+
+# Read a file, create a file, and concatenate files
+# Syntax: cat [option(s)] [file_name(s)] [-] [file_name(s)]
+
+cat 
+    common options:
+    -n, --number -> number all output lines
+
+# pipe |
+
+| -> A pipe takes the standard output of one command and passes it as the input to another.
+
+# read the start of the file 
+# Syntax: head [option(s)] file(s)
+
+head
+    common options:
+    -n, --lines[-]NUM ->  print  the  first  NUM lines instead of the first 10.
+
+# read the end of a file
+# Syntax: tail [option(s)] file_names
+
+tail
+    common options:
+    -n -> la fel ca head cred ;)
+
+# sets the file permissions flag on a file or folder
+#Syntax: chmod [option(s)] permissions file_name
+
+chmod
+    common options:
+    -f, --silent, --quiet -> supress most error meesages
+    -v, --verbose -> output a diagnostic for every file procesed
+
+# exit out of a directory
+#Syntax exit        
+
+exit

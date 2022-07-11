@@ -1,0 +1,30 @@
+Vim helper
+
+
+
+	Command mode:
+
+	
+
+	-i-insert 
+
+	-o-new line and swich to insert mode
+
+	-dd-delete
+
+	-p-paste
+
+	-y-copy
+
+	-gg-go to first row
+
+	-G-go to last row
+
+	-:-open command line:
+
+		-w-save
+
+		-q-exit
+
+		
+

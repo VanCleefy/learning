@@ -1,0 +1,18 @@
+#Access through https://console.cloud.google.com
+-----------------------------------------------------------------------------------------
+#Hamburger menu options
+  
+  VM's
+  
+From hamburger menu -> compute engine
+Management window for compute instances and instance related operations
+
+  Web SQL service
+  
+From hamburger menu -> SQL
+Management window for SQL instances and related op's
+
+-----------------------------------------------------------------------------------------
+#Submenu's
+  VM's
+    

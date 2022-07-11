@@ -1,0 +1,1 @@
+awk -F',' '{if($4=="ETH 2.0 Staking Rewards"){sum+=$6}}END{print sum}'

@@ -1,0 +1,25 @@
+Lesson 2:
+
+	#cloning projects
+	git clone git@github.com:USER-NAME/REPOSITORY-NAME.git
+	git remote -v
+
+    #get the status of the cloned project
+    git status
+
+    #add files to the staging area after adding/modifying files in the project
+    git add .
+
+    #commit the files from the staging area to the push area
+    git commit -m "message"
+
+    #push the new files
+    git push
+
+    #pull the new files
+    git pull
+
+    #command history
+    git log
+
+    

@@ -1,0 +1,106 @@
+What is mongodb?
+
+MongoDB is a NoSQL document database.
+Data in mongodb is stored as a document.
+Documenctions of documents.
+
+----------------------------------------------------------------
+
+What is a document?
+
+A way to organize and store data as a set of field-value pairs.
+ex:
+	{
+	<field> : <value>,
+	<field> : <value>,
+	"name" : "Tim",
+	"title": "hobo"
+	}
+
+----------------------------------------------------------------
+
+What is a collection of documents?
+
+An organized store of documents in mongodb, usually with common fields between documents.
+
+----------------------------------------------------------------
+
+What is Atlas?
+
+MongoDB in the cloud. SaaS Software as a Service.
+
+
+
+What is JSON?
+
+JavaScript Standard Object Notation.
+	-starts and ends with curly braces {}
+	-separate each key and value with a colon :
+	-separate each key-value pair with a comma ,
+	-"keys" must be surrounded by quotation marks " "
+		-> In MongoDB "keys" are called "fields"
+
+MongoDB import/export:
+
+	#for BSON output/dump
+	mongodump --uri "mongodb+srv://<your username>:<your password>@<your cluster>.mongodb.net/sample_supplies"
+	#for JSON output/dump
+	mongoexport --uri="mongodb+srv://<your username>:<your password>@<your cluster>.mongodb.net/sample_supplies" --collection=sales --out=sales.json
+	#for BSON import/drop
+	mongorestore --uri "mongodb+srv://<your username>:<your password>@<your cluster>.mongodb.net/sample_supplies"  --drop dump
+	#for JSON import/drop
+	mongoimport --uri="mongodb+srv://<your username>:<your password>@<your cluster>.mongodb.net/sample_supplies" --drop sales.json
+
+MongoDB connect:
+
+	#connect to the admin db
+	mongo "mongodb+srv://<username>:<password>@<cluster>.mongodb.net/admin"
+	mongo "mongodb+srv://m001-student:m001-student@sandbox.vmxtn.mongodb.net/admin"
+	#show local databases
+	show dbs
+	#use a specific db
+	use sample_training
+	#show a list of all collections
+	show collections
+	#query the db(use sample_training command) and the collection zips for the state NY pair
+	db.zips.find({"state": "NY"})
+	#query the db for a sample document in a collection
+	db.inspections.findOne()
+	#count the nr of results
+	db.zips.find({"state": "NY"}).count()
+	#pretty up the results
+	db.zips.find({"state": "NY"}).pretty()
+
+
+Document
+ - "_id" unique identifier for a document in a collection and required in every MongoDB document.
+ - ObjectId() is the default value for the "_id" fields unless otherwise specified.
+
+
+ // insert documents
+
+ db.inspections.insert([ { "test": 1 }, { "test": 2 }, { "test": 3 } ])
+
+ // insert documents and specify id values
+
+ db.inspections.insert([{ "_id": 1, "test": 1 },{ "_id": 1, "test": 2 }, { "_id": 3, "test": 3 }])
+
+ // find documents with specific id
+
+ db.inspections.find({ "_id": 1 })
+
+ // insert documents with ordered option false
+
+ db.inspections.insert([{ "_id": 1, "test": 1 },{ "_id": 1, "test": 2 }, { "_id": 3, "test": 3 }],{ "ordered": false })
+
+ // view collections in active db
+
+ show collections
+
+ // view all dbs
+
+ show dbs
+
+ // switch to db
+
+ use training
