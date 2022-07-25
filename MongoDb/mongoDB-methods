@@ -1,0 +1,12 @@
+	Methods used in mongoDB
+
+.count()
+
+	db.something.find(someitems).count()
+	//returns the number of results pertaining to the find(someitems) query
+
+
+.pretty()
+
+	db.something.find(someitems).pretty()
+	//returns the result of the find(someitems) query but in a "pretty" format
