@@ -1,0 +1,25 @@
+     MongoDB update
+
+     UpdateOne()
+
+        //Update a single document in the zips collection where the zip filed is equal to "12534" by setting the value of the "pop" field to 17630
+
+	db.zips.updateOne({ "zip":"12534"}, {"$set":{"pop":17630}})
+ 
+
+     
+     UpdateMany()
+	
+        //Update all documents in the zips collection where the city filed is equal to "Huston" by adding 10 to the current value of the "pop" field
+
+	db.zips.updateMany({ "city":"Huston"}, {"$inc":{"pop":10}})
+      
+
+     { $push: { <field>: <value>,..}} 
+	//adds an element to an array field
+
+     { "$inc": { "pop":10,"<field2>": <increment value>,...}} 
+	//increment field value by a specific amount
+
+     { "$set": {"pop":17630, "<field2>": <new value>,..}} 
+	//sets field value to a new specified value
