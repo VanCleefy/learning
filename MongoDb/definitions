@@ -1,0 +1,46 @@
+	MongoDB Definitions
+
+
+What is mongodb?
+
+	MongoDB is a NoSQL document database.
+	Data in mongodb is stored as a document.
+	Documenctions of documents.
+
+----------------------------------------------------------------
+
+What is a document?
+
+	A way to organize and store data as a set of field-value pairs.
+	ex:
+		{
+		<field> : <value>,
+		<field> : <value>,
+		"name" : "Tim",
+		"title": "hobo"
+		}
+
+----------------------------------------------------------------
+
+What is a collection of documents?
+
+	An organized store of documents in mongodb, usually with common fields between documents.
+
+----------------------------------------------------------------
+
+What is Atlas?
+
+	MongoDB in the cloud. SaaS Software as a Service.
+
+----------------------------------------------------------------
+
+What is JSON?
+
+JavaScript Standard Object Notation.
+	-starts and ends with curly braces {}
+	-separate each key and value with a colon :
+	-separate each key-value pair with a comma ,
+	-"keys" must be surrounded by quotation marks " "
+		-> In MongoDB "keys" are called "fields"
+
+----------------------------------------------------------------
