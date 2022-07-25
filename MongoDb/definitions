@@ -44,3 +44,9 @@ JavaScript Standard Object Notation.
 		-> In MongoDB "keys" are called "fields"
 
 ----------------------------------------------------------------
+
+Document
+ - "_id" unique identifier for a document in a collection and required in every MongoDB document.
+ - ObjectId() is the default value for the "_id" fields unless otherwise specified.
+
+----------------------------------------------------------------
