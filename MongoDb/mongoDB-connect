@@ -1,0 +1,21 @@
+		MongoDB connect:
+
+	#connect to the admin db
+	mongo "mongodb+srv://<username>:<password>@<cluster>.mongodb.net/admin"
+	mongo "mongodb+srv://m001-student:m001-student@sandbox.vmxtn.mongodb.net/admin"
+	#show local databases
+	show dbs
+	#use a specific db
+	use sample_training
+	#show a list of all collections
+	show collections
+	#query the db(use sample_training command) and the collection zips for the state NY pair
+	db.zips.find({"state": "NY"})
+	#query the db for a sample document in a collection
+	db.inspections.findOne()
+	#count the nr of results
+	db.zips.find({"state": "NY"}).count()
+	#pretty up the results
+	db.zips.find({"state": "NY"}).pretty()
+
+
