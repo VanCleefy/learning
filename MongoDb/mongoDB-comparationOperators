@@ -1,0 +1,7 @@
+    {<field>:{operators}:<value>}}
+	 $eq = equal to
+         $gt = greater than
+	 $gte = greater than or equal to
+	 $ne = not equal to
+         $lt = less than
+	 $lte = less than or equal to

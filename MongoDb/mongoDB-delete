@@ -1,0 +1,12 @@
+   deleteMany()
+	
+	db.inspections.deleteMany({"test":1})
+	//Delete all documents that have test field equal to 1
+
+   deleteOne()
+	db.inspections.deleteOne({"test":3})
+	//Delete one document that has test field equal to 3
+
+   drop()
+	db.inspections.drop()
+	//Drop the inspection collection
