@@ -1,0 +1,15 @@
+   Logic  Operators
+  
+
+   $and - Mach all the specified query clauses
+   $or  - At least one of the query clauses is mached 
+   $nor - Fail to mach both given clauses
+   $not - Negates the query requierment 
+   
+
+   Sintax {"$<operator>" : [{<clause1},{<clause2>},...]}
+   Sintax for $not {$not:{<clause>}}
+   $and is used as the default operator when an operator is not specified.
+
+   Explicitly use $and when you need to include the same operator more
+   than once in a query. 

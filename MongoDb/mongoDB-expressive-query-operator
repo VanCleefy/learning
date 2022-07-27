@@ -1,0 +1,20 @@
+    $expr allows the use of aggregation expressions within the query language
+                              { $expr: { <expression> } }
+    $expr allows us to use variables and conditional statements
+    
+    $ - denotes the use of an operator
+      - addresses the field value
+    //Example\\
+    
+    {"$expr": {
+                "$and": [
+
+                        {"$gt": ["$tripduration", 1200]},
+                        {"$eq": ["$end station id", "$start station id" ]}
+
+                       ]
+              }
+   }
+
+      MQL syntax:  {<field>: { <operator>: ‹value> } }
+      Aggregation syntax:{<operator>: {<field>, ‹value> } }
