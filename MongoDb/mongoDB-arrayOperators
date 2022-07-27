@@ -15,3 +15,4 @@
 
 	-An array returns only exact array matches
 	-A single element will return all documents where the specified array field contains this given element.
+	

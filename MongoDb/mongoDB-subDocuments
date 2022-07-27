@@ -1,0 +1,4 @@
+  MQL uses dot-notation to specify the address of nesred elements in a document
+  To use dot-notation in arrays specify the position of the element in the arry.
+  db.collection.find({"field1.other field.also a field":"value"})
+

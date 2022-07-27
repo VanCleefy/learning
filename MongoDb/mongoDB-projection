@@ -1,0 +1,16 @@
+  Projection Syntax 
+  db.<collection>.find({<query>},{<projection>})
+	1-include the field
+	2-exclude the field
+	!!Use ony 1s or only 0s!!
+   db.<collection>.find({<query>},{<field1>:1,<field2>:1})
+   or 
+   db.<collection>.find({<query>},{<field1>:0,<field2>:0})
+   exception:
+   db.<collection>.find({<query>},{<field1>:1,"_id":0})
+   
+   {<field>:{"$elemMatch":{<field>:<value>}}}
+   Matches documents that contain an array field with at least one element that matches the specified query criteria.
+   or 
+   Projects only the arry elements with at leats one element that matches the specified criteria. 
+
