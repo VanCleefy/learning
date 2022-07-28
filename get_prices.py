@@ -23,7 +23,7 @@ collection = cata_db["first_page_collection"]    #["coingeckoCollection"]
 
 
 
-
+#Delete all documents from collection
 #collection.delete_many({})
 
 #coins = ['bitcoin', 'litecoin', 'ethereum','polygon','xrp','solana','dodgecoin','chainlink','cardano','decentraland']
