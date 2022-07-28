@@ -2,7 +2,7 @@ const http = require('http')
 const { MongoClient } = require("mongodb");
 
 const hostname = '127.0.0.1'
-const port = '8080'
+const port = '3000'
 
 var server = http.createServer((req, res) => {
     res.statusCode = 200
