@@ -47,7 +47,7 @@ const findDocuments = function(db, callback) {
     //
     console.log("Listing the coins:")
     // Find some documents
-    collection.find().toArray(function(err, docs) {
+    collection.find({"accommodates":{"$gr":6},"number_of_reviews":{"$eq":50}}).toArray(function(err, docs) {
       assert.equal(err, null);
       //console.log("Found the following records");
       console.log(docs.forEach(element => {
