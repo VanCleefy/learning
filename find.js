@@ -10,6 +10,7 @@ var server = http.createServer((req, res) => {
     res.statusCode = 200
     res.setHeader('Content-Type','text/plain')
     res.write('Hello World\n')
+    res.end();
 })
 
 server.listen(port, hostname, () => {
@@ -56,6 +57,6 @@ const findDocuments = function(db, callback) {
           console.log("===============================================")
       })
       );
-      callback(docs);
+      //callback(docs);
     });
   }
