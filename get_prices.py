@@ -58,7 +58,7 @@ for coin in coins3:
     except KeyError :
         pass
     except requests.exceptions.HTTPError:
-        time.sleep(10)
+        time.sleep(60)
     else:
         collection.insert_one({"_id":id,
                                "price_in_euro":price_in_euro,
@@ -72,4 +72,4 @@ for coin in coins3:
                                "usd_market_cap":usd_market_cap})
 
         #pprint.pprint(prices)
-    time.sleep(1.2)
+    time.sleep(2)
