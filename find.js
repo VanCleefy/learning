@@ -10,6 +10,7 @@ var server = http.createServer((req, res) => {
     res.statusCode = 200
     res.setHeader('Content-Type','text/plain')
     res.write('Hello World\n')
+    res.end();
 })
 
 server.listen(port, hostname, () => {
@@ -46,7 +47,11 @@ const findDocuments = function(db, callback) {
     //
     console.log("Listing the coins:")
     // Find some documents
+<<<<<<< HEAD
     collection.find({"name":"ZYX"}).toArray(function(err, docs) {
+=======
+    collection.find({"accommodates":{"$gr":6},"number_of_reviews":{"$eq":50}}).toArray(function(err, docs) {
+>>>>>>> a3dea3a42b3dc05f176070c118b9e58d5871add8
       assert.equal(err, null);
       //console.log("Found the following records");
       console.log(docs.forEach(element => {
@@ -56,6 +61,6 @@ const findDocuments = function(db, callback) {
           console.log("===============================================")
       })
       );
-      callback(docs);
+      //callback(docs);
     });
   }

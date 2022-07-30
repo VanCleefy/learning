@@ -1,0 +1,424 @@
+[
+{
+ "ticket":"1",
+ "name":"[shreeelectricals.com] Call home failed",
+ "link":"https://bz.labs.lenovo.com/show_bug.cgi?id=240185",
+ "status":"working",
+ "solution":"N/A",
+ "next-step":"contact Luiza and Daiana for a follow-up based on comment #14",
+ "follow-up":"David,Vicky; comment #11, #12",
+ "list":"DevBugList"
+},
+{
+ "ticket":"2",
+ "name":"[ER Telecom] Failed to update LXCA to 3.4 from 3.3.3",
+ "link":"https://bz.labs.lenovo.com/show_bug.cgi?id=243851",
+ "status":"working",
+ "solution":"as per comment #3 | FFDC design, FFDC collection future release",
+ "next-step":"follow-up with dev and alex",
+ "list":"L2BugList"
+},
+{
+ "ticket":"3",
+ "name":"[IBM/Lloyds] OS Deploy not working",
+ "link":"https://bz.labs.lenovo.com/show_bug.cgi?id:243964",
+ "status":"rejected",
+ "solution":"as per comment #9 | update to 3.4.0",
+ "next-step":"update to 3.4.0",
+ "follow-up":"David,Vicky; comment #11, #12",
+ "list":"L2BugList"
+},
+{
+ "ticket":"4",
+ "name":"[Concentrix] More debug information about root issue in UI rather than just in logs",
+ "link":"https://bz.labs.lenovo.com/show_bug.cgi?id:244188",
+ "status":"open",
+ "solution":"as per comment #6",
+ "next-step":"waiting for a decision from Jeff | David:take it to scrum",
+ "follow-up":"David; comment #8, #9",
+ "list":"L3BugList"
+},
+{
+ "ticket":"5",
+ "name":"[UHD] Request has failed message popping up all time",
+ "link":"https://bz.labs.lenovo.com/show_bug.cgi?id:244612",
+ "status":"rejected",
+ "solution":"as per comment #12",
+ "next-step":"This needs to be a new story.",
+ "follow-up":"David; comment #17",
+ "list":"DevBugList"
+},
+{
+ "ticket":"6",
+ "name":"[T-Systems] Cannot deploy SLES 12, 15",
+ "link":"https://bz.labs.lenovo.com/show_bug.cgi?id=245903",
+ "status":"rejected",
+ "solution":"as per comment #26 | online docs provided by Vicky",
+ "next-step":"follow-up with the customer",
+ "follow-up":"David; comment #21",
+ "list":"L2BugList"
+},
+{
+ "ticket":"7",
+ "name":"[Multiple customers] Warranty information not loading",
+ "link":"https://bz.labs.lenovo.com/show_bug.cgi?id=246943",
+ "status":"open",
+ "solution":"as per comment #10 | release JDBC Connection",
+ "next-step":"follow-up with Valentin",
+ "follow-up":"David; comment #17",
+ "list":"DevBugList"
+},
+{
+ "ticket":"8",
+ "name":"[Inditex] Add more information to UI Request failed popups and Hardware was removed",
+ "link":"https://bz.labs.lenovo.com/show_bug.cgi?id=250523",
+ "status":"rejected",
+ "solution":"N/A",
+ "next-step":"as per action | taking it to scrum",
+ "follow-up":"David; comment #7",
+ "list":"L3BugList"
+},
+{
+ "ticket":"9",
+ "name":"[All customers] Reset password mechanism doesn't work",
+ "link":"https://bz.labs.lenovo.com/show_bug.cgi?id=247025",
+ "status":"working",
+ "solution":"N/A",
+ "next-step":"as per comment #6 | investigating passreset script",
+ "follow-up":"David; comment #7",
+ "list":"DevBugList"
+},
+{
+ "ticket":"10",
+ "name":"[MICROSOFT] Cannot update windows drivers",
+ "link":"https://bz.labs.lenovo.com/show_bug.cgi?id=252473",
+ "status":"working",
+ "solution":"N/A",
+ "next-step":"follow-up with Ricardo",
+ "follow-up":"David; comment #8",
+ "list":"DevBugList"
+},
+{
+ "ticket":"11",
+ "name":"[UoA] TSM Redfish unresponsive",
+ "link":"https://bz.labs.lenovo.com/show_bug.cgi?id=253233",
+ "status":"rejected",
+ "solution":"N/A",
+ "next-step":"need log files",
+ "follow-up":"David; comment #6",
+ "list":"L2BugList"
+},
+{
+ "ticket":"12",
+ "name":"[SAP] Multiple update flow failures",
+ "link":"https://bz.labs.lenovo.com/show_bug.cgi?id=253762",
+ "status":"rejected",
+ "solution":"as per comment #3 | workaround",
+ "next-step":"follow-up with Alex",
+ "follow-up":"David; comment #5",
+ "list":"L2BugList"
+},
+{
+ "ticket":"13",
+ "name":"[Capgemini] Failed to manage node",
+ "link":"https://bz.labs.lenovo.com/show_bug.cgi?id=254829",
+ "status":"rejected",
+ "solution":"N/A",
+ "next-step":"based on comment #14 | need some info from Alex",
+ "list":"L2BugList"
+},
+{
+ "ticket":"13",
+ "name":"[Inditex + other customer] SSDP test tooling integrated in LXCA - 1001144587 - CRM:000860005453",
+ "link":"https://bz.labs.lenovo.com/show_bug.cgi?id=254830",
+ "status":"open",
+ "solution":"N/A",
+ "next-step":"need some info from Alex",
+ "list":"L2BugList"
+},
+{
+ "ticket":"14",
+ "name":"[Saintfrancis] Callhome failing with 502 Bad Gateway",
+ "link":"https://bz.labs.lenovo.com/show_bug.cgi?id=254837",
+ "status":"open",
+ "solution":"as per comment #8 | added as limitation",
+ "next-step":"PE requests TIP for defect since it cannot be solved without major changes in code and will require more time.",
+ "list":"L2BugList"
+},
+{
+ "ticket":"15",
+ "name":"[Deutsche Telecom / TSystems] Internal Error 0562 Unexpected Job creation failed",
+ "link":"https://bz.labs.lenovo.com/show_bug.cgi?id=255439",
+ "status":"rejected",
+ "solution":"N/A",
+ "next-step":"as per comment #12 | Yufei offered workaround",
+ "list":"DevBugList"
+},
+{
+ "ticket":"16",
+ "name":"[Bank of Vontobel] LXCA Call home failed due to 400 response: Invalid parameters: City",
+ "link":"https://bz.labs.lenovo.com/show_bug.cgi?id=257744",
+ "status":"rejected",
+ "solution":"as per comment #1 | change the name to Hong Kong",
+ "next-step":"N/A",
+ "follow-up":"N/A",
+ "list":"L2BugList"
+},
+{
+ "ticket":"17",
+ "name":"[T-Systems] Unable to import config patterns",
+ "link":"https://bz.labs.lenovo.com/show_bug.cgi?id=257880",
+ "status":"rejected",
+ "solution":"WAD",
+ "next-step":"close the case?",
+ "follow-up":"N/A",
+ "list":"L2BugList"
+},
+{
+ "ticket":"18",
+ "name":"can not upgrade switch FW via Xclarity",
+ "link":"https://bz.labs.lenovo.com/show_bug.cgi?id=258078",
+ "status":"fixed",
+ "solution":"as per comment #22 | fixed",
+ "list":"DefaultBugList"
+},
+{
+ "ticket":"19",
+ "name":"[RBC] LXCA disables LXCO's event forwarders",
+ "link":"https://bz.labs.lenovo.com/show_bug.cgi?id=258309",
+ "status":"working",
+ "solution":"N/A",
+ "next-step":"contact development about comment #19",
+ "list":"DefaultBugList"
+},
+{
+ "ticket":"20",
+ "name":"[MetroBank] LDAP authentication fails",
+ "link":"https://bz.labs.lenovo.com/show_bug.cgi?id=258605",
+ "status":"working",
+ "solution":"as per comment #6 | we are going to need to patch the null pointer exception",
+ "next-step":"follow-up with dev",
+ "follow-up":"did follow-up | dev said will talk to Alex about the bug",
+ "list":"DevBugList"
+},
+{
+ "ticket":"21",
+ "name":"[GK-Software] Progressive downgrade during update job - 1001191010 - CRM:003930001033",
+ "link":"https://bz.labs.lenovo.com/show_bug.cgi?id=259252",
+ "status":"open",
+ "solution":"N/A",
+ "next-step":"as per comment #13 | uploaded logs for dev",
+ "follow-up":"N/A",
+ "list":"DefaultBugList"
+},
+{
+ "ticket":"22",
+ "name":"[St.Gallen] Applying config profile yields exception. - 1001195452 - CRM:000860006368",
+ "link":"https://bz.labs.lenovo.com/show_bug.cgi?id=259634",
+ "status":"open",
+ "solution":"N/A",
+ "next-step":"waiting on DM team",
+ "list":"DevBugList"
+},
+{
+ "ticket":"23",
+ "name":"[SAP] XCC firmware showing as non compliant in LXCA - 1001170766 - CRM:011440000317",
+ "link":"https://bz.labs.lenovo.com/show_bug.cgi?id=259642",
+ "status":"rejected",
+ "solution":"N/A",
+ "next-step":"as per comment #4 | need more info from the customer",
+ "list":"L2BugList"
+},
+{
+ "ticket":"24",
+ "name":"[Paypal] Bizarre package import bug",
+ "link":"https://bz.labs.lenovo.com/show_bug.cgi?id=260623",
+ "status":"rejected",
+ "solution":"fixed in a clone bug?",
+ "next-step":"follow-up with development",
+ "list":"DefaultBugList"
+},
+{
+ "ticket":"25",
+ "name":"[Paypal] Bizarre package import bug",
+ "link":"https://bz.labs.lenovo.com/show_bug.cgi?id=260680",
+ "status":"verify",
+ "solution":"as per comment #2 | delivered in 3.5.11",
+ "next-step":"follow-up with customer",
+ "follow-up":"N/A",
+ "list":"L2BugList"
+},
+{
+ "ticket":"26",
+ "name":"[Kyndryl/LLoyds] SNMP alterting is not mapping data to OIDs correctly - 1001212638 - CRM:041250000374",
+ "link":"https://bz.labs.lenovo.com/show_bug.cgi?id=261326",
+ "status":"fixed",
+ "solution":"fixed and cherry picked for 3.5 and 3.6",
+ "next-step":"follow-up with customer",
+ "list":"L2BugList"
+},
+{
+ "ticket":"27",
+ "name":"[Deutsche Telecom / TSystems] Internal Error 0562 Unexpected Job creation failed",
+ "link":"https://bz.labs.lenovo.com/show_bug.cgi?id=255439",
+ "status":"rejected",
+ "solution":"N/A",
+ "next-step":"as per comment #8 | reproduce and capture ffdc",
+ "follow-up":"N/A",
+ "list":"L2BugList"
+},
+{
+ "ticket":"28",
+ "name":"[PORR AG] Unable to login with Local Users after updating LXCA to 3.5.3 (Local First, then LDAP) - 1001218120 - CRM:000860006715",
+ "link":"https://bz.labs.lenovo.com/show_bug.cgi?id=261776",
+ "status":"rejected",
+ "solution":"offered workaround",
+ "next-step":"contact customer and give the workaround",
+ "list":"L2BugList"
+},
+{
+ "ticket":"29",
+ "name":"[Cognizant] Unable to perform automatic Call Home. Job gets stuck in pending",
+ "link":"https://bz.labs.lenovo.com/show_bug.cgi?id=262194",
+ "status":"fixed",
+ "solution":"as per comment #14 | added more logging",
+ "next-step":"plan of action in 7/25 scrum meeting",
+ "list":"L2BugList"
+},
+{
+ "ticket":"30",
+ "name":"LXCA policy failed to update RAID 9350 5.00",
+ "link":"https://bz.labs.lenovo.com/show_bug.cgi?id=262443",
+ "status":"working",
+ "solution":"as per comment #10 | working to transfer to hardware",
+ "next-step":"transfer to hardware",
+ "list":"L3BugList"
+},
+{
+ "ticket":"31",
+ "name":"[Kyndryl] Error '0562' when trying to manage host using CyberArk Identity Management Credentials",
+ "link":"https://bz.labs.lenovo.com/show_bug.cgi?id=263040",
+ "status":"rejected",
+ "solution":"fixed during webex",
+ "next-step":"follow-up with Jurij and Alex about customers demands",
+ "list":"L2BugList"
+},
+{
+ "ticket":"32",
+ "name":"can not upgrade switch FW via Xclarity",
+ "link":"https://bz.labs.lenovo.com/show_bug.cgi?id=258309",
+ "status":"verify",
+ "solution":"as per comment #8 | fixed in 3.6.0",
+ "next-step":"customer - update to 3.6.0",
+ "follow-up":"N/A",
+ "list":"L2BugList"
+},
+{
+ "ticket":"33",
+ "name":"[Houston Methodist] Event messages without content",
+ "link":"https://bz.labs.lenovo.com/show_bug.cgi?id=263220",
+ "status":"fixed",
+ "solution":"as per comment #16 | pushed into 3.5 and 3.6",
+ "next-step":"follow-up with customer",
+ "list":"L2BugList"
+},
+{
+ "ticket":"34",
+ "name":"sso not work with LXCA v3.6.0 and SD530 BMC v5.20",
+ "link":"https://bz.labs.lenovo.com/show_bug.cgi?id=263257",
+ "status":"fixed",
+ "solution":"fixed, velay verify",
+ "next-step":"follow-up with customer",
+ "list":"DefaultBugList"
+},
+{
+ "ticket":"35",
+ "name":"[IBA Group] Unable to manage DE2000H on LXCA",
+ "link":"https://bz.labs.lenovo.com/show_bug.cgi?id=263483",
+ "status":"open",
+ "solution":"N/A",
+ "next-step":"logs uploaded and development contacted, awaiting dev feedback",
+ "list":"DevBugList"
+},
+{
+ "ticket":"36",
+ "name":"all of FC swich disappear after LXCA(ver:3.5.0,ver:3.6.0) restarted",
+ "link":"https://bz.labs.lenovo.com/show_bug.cgi?id=263730",
+ "status":"fixed",
+ "solution":"pushed in all branches",
+ "next-step":"follow-up with customer",
+ "list":"DefaultBugList"
+},
+{
+ "ticket":"37",
+ "name":" [Celero] LAfix request for v3.5.x to fix the unsupported special characters ( $ \\ ` ) for password",
+ "link":"https://bz.labs.lenovo.com/show_bug.cgi?id=263938",
+ "status":"verify",
+ "solution":"as per comment #4 | pushed in 3.5.11",
+ "next-step":"close it?",
+ "list":"L2BugList"
+},
+{
+ "ticket":"38",
+ "name":"[Saint Francis] LXCA Call Home for hardware serviceable event failed to upload service data properly.",
+ "link":"https://bz.labs.lenovo.com/show_bug.cgi?id=264063",
+ "status":"open",
+ "solution":"N/A",
+ "next-step":"contact dev",
+ "list":"DevBugList"
+},
+{
+ "ticket":"39",
+ "name":"Lianbao Electronic Technology-cplus- os deloy jobs show in progress but actually it has done",
+ "link":"https://bz.labs.lenovo.com/show_bug.cgi?id=264144",
+ "status":"fixed",
+ "solution":"N/A",
+ "next-step":"as per comment #11 | apply the lafix (to log the system better) and get more information from the customer when the issue reappears",
+ "list":"DefaultBugList"
+},
+{
+ "ticket":"40",
+ "name":"LXCA push firmware update LOM x722 HX7520 LCM nutanix crashes system",
+ "link":"https://bz.labs.lenovo.com/show_bug.cgi?id=264658",
+ "status":"rejected",
+ "solution":"N/A",
+ "next-step":"as per comment #2 | need more information from L2",
+ "list":"L2BugList"
+},
+{
+ "ticket":"41",
+ "name":"[T-Systems] LXCA Canceling Jobs not effectively canceling",
+ "link":"https://bz.labs.lenovo.com/show_bug.cgi?id=264982",
+ "status":"open",
+ "solution":"N/A",
+ "next-step":"as per comment #3 | David will follow-up",
+ "list":"L3BugList"
+},
+{
+ "ticket":"42",
+ "name":"[Six Sigma France] Servers offline in LXCA",
+ "link":"https://bz.labs.lenovo.com/show_bug.cgi?id=261660",
+ "status":"rejected",
+ "solution":"N/A",
+ "next-step":"as per comment #4 | follow-up with the customer",
+ "list":"L2BugList"
+},
+{
+ "ticket":"43",
+ "name":"[JNData] LXCA skipped SR650 firmware upgrade for PCI adapter vs OCP",
+ "link":"https://bz.labs.lenovo.com/show_bug.cgi?id=265119",
+ "status":"open",
+ "solution":"N/A",
+ "next-step":"triaje",
+ "list":"L3BugListv"
+},
+{
+ "ticket":"44",
+ "name":"[Saintfrancis] OS deployment failures",
+ "link":"https://bz.labs.lenovo.com/show_bug.cgi?id=265222",
+ "status":"open",
+ "solution":"N/A",
+ "next-step":"follow-up with development",
+ "list":"DevBugList"
+}
+]
