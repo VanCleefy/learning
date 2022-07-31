@@ -1,5 +1,6 @@
 import time
 
+import pymongo.errors
 import requests.exceptions
 from pymongo import MongoClient
 from pycoingecko import CoinGeckoAPI
@@ -41,11 +42,12 @@ coins3 = json.loads(coins2.replace('id','_id'))
 
 
 for coin in coins3:
-    id = coin["_id"]
-    prices = cg.get_price(ids=id, vs_currencies=currencies ,include_market_cap=True, include_24hr_vol=True, include_24hr_change=True, include_last_updated_at=True)
+    try:
+        id = coin["_id"]
+        prices = cg.get_price(ids=id, vs_currencies=currencies ,include_market_cap=True, include_24hr_vol=True, include_24hr_change=True, include_last_updated_at=True)
 
     #Exception handling for shitty coins who doesn't have the vars below
-    try:
+    
         price_in_euro=prices[id]["eur"]
         eur_24h_change = prices[id]["eur_24h_change"]
         eur_24h_vol = prices[id]["eur_24h_vol"]
@@ -55,10 +57,11 @@ for coin in coins3:
         usd_24h_change = prices[id]["usd_24h_change"]
         usd_24h_vol = prices[id]["usd_24h_vol"]
         usd_market_cap = prices[id]["usd_market_cap"]
+
     except KeyError :
         pass
     except requests.exceptions.HTTPError:
-        time.sleep(60)
+        time.sleep(1800)
     else:
         collection.insert_one({"_id":id,
                                "price_in_euro":price_in_euro,
@@ -72,4 +75,10 @@ for coin in coins3:
                                "usd_market_cap":usd_market_cap})
 
         #pprint.pprint(prices)
-    time.sleep(2)
+        time.sleep(1.2)
+
+
+#see all documentss
+# results = collection.find()
+# for x in results:
+#     pprint.pprint(x)
