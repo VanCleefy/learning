@@ -4,10 +4,10 @@ const MongoClient = require('mongodb').MongoClient;
 const url = 'mongodb+srv://m001-student:m001-student@sandbox.a8wbxoo.mongodb.net/?retryWrites=true&w=majority';
 
 // Database Name
-const dbName = 'sample_airbnb';
+const dbName = 'sample_training';
 const client = new MongoClient(url);
 const db = client.db(dbName);
-const collection = db.collection('listingsAndReviews');
+const collection = db.collection('zips');
 
 
 // Create a new MongoClient
@@ -33,7 +33,7 @@ const findDocuments = function(db, callback) {
     //
     //console.log("Listing the coins:")
     // Find some documents
-    collection.find({"accommodates":{"$gt":6},"number_of_reviews":{"$eq":50}}).toArray(function(err, docs) {
+    collection.updateMany({ "city": "HUDSON" }, { "$inc": { "pop": -10 } }).toArray(function(err, docs) {
       console.log("Found the following records");
       console.log("##############################");
       console.log("Found the following records");
